@@ -39,7 +39,15 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 driver.manage().window().maximize();
 selenium.open("http://thepetsplanet.somee.com/")
 Thread.sleep(500);
-selenium.click("document.querySelectorAll('.nav-link')[4]");
+//selenium.click("document.getElementById('navbarDropdown1')");
+////selenium.click("document.querySelectorAll('.nav-link')[5]");
+//selenium.click("document.querySelectorAll('#navbarDropdown1')");
+
+selenium.click("id=navbarDropdown1")
+Thread.sleep(500);
+selenium.click("id=navbarDropdown1")
+selenium.click("link=Buyer/Seller")
+
 
 selenium.click("id=US_Name")
 selenium.type("id=US_Name", "Ashar")
