@@ -41,7 +41,7 @@ selenium.open("http://thepetsplanet.somee.com/")
 Thread.sleep(500);
 String UserName= 'Waleed';
 String password = 'Waleed123$';
-selenium.click("document.querySelectorAll('.nav-link')[5]");
+selenium.click("document.getElementById('login-logout');");
 
 selenium.click("id=US_Name")
 selenium.type("id=US_Name",UserName)
